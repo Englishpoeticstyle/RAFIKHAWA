@@ -1,13 +1,22 @@
 {
+  "id": "./",
   "name": "Learning Studio - A Gift for the Family",
   "short_name": "Learning Studio",
+  "description": "Fun learning games in 8 languages for every age, made for the Khawa Rafik family and kids. Works offline.",
+  "lang": "ar",
+  "dir": "auto",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "any",
-  "background_color": "#FFFFFF",
-  "theme_color": "#000000",
+  "background_color": "#FAF8F3",
+  "theme_color": "#15130F",
+  "categories": ["education", "kids", "games"],
   "icons": [
-    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }
