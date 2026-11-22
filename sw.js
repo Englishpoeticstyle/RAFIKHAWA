@@ -2,8 +2,8 @@
 // The first visit (online) saves the app and fonts on the device.
 // After that, the studio opens and works without internet.
 
-const CACHE = "family-studio-v3";
-const CORE = ["./", "./index.html", "./db.js", "./manifest.json", "./icon.svg"];
+const CACHE = "family-studio-v4";
+const CORE = ["./", "./index.html", "./db.js", "./i18n.js", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", event => {
   event.waitUntil(
