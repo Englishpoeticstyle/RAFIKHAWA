@@ -11,27 +11,27 @@
 <meta name="apple-mobile-web-app-title" content="Learning Studio">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Noto+Naskh+Arabic:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --paper: #FBF5EA;
-    --card: #FFFDF8;
-    --ink: #1F3B40;
-    --teal: #2A7F7A;
-    --terra: #E07A5F;
-    --mustard: #F2C14E;
-    --sky: #8FC7D6;
-    --sage: #A8C5A0;
-    --plum: #9B5DE5;
-    --line: #E6DCCB;
-    --muted: #6B7A7C;
+    --paper: #F7F4FF;
+    --card: #FFFFFF;
+    --ink: #3B2A4A;
+    --teal: #4FB3E8;
+    --terra: #F06292;
+    --mustard: #FFD54F;
+    --sky: #B3E5FC;
+    --sage: #C8F7DC;
+    --plum: #B57EDC;
+    --line: #F0D9EA;
+    --muted: #8A7A94;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0; min-height: 100vh; font-family: 'Cairo', system-ui, sans-serif; color: var(--ink);
     background:
-      radial-gradient(circle at 8% 0%, #FFE6B3 0, transparent 36%),
-      radial-gradient(circle at 96% 12%, #CDEBF2 0, transparent 34%),
+      radial-gradient(circle at 8% 0%, #FFD6E8 0, transparent 36%),
+      radial-gradient(circle at 96% 12%, #CFEAFD 0, transparent 34%),
       var(--paper);
   }
   .wrap { max-width: 1040px; margin: 0 auto; padding: 22px 14px 34px; }
@@ -40,7 +40,7 @@
 
   /* Header */
   .hero {
-    position: relative; overflow: hidden; background: var(--teal); color: #fff;
+    position: relative; overflow: hidden; background: linear-gradient(135deg, #F06292 0%, #4FB3E8 100%); color: #fff;
     border-radius: 30px; padding: 26px 26px 22px; box-shadow: 0 18px 34px -22px rgba(31,59,64,.7);
   }
   .ribbon {
@@ -134,7 +134,7 @@
   .mgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 640px; margin: 0 auto; }
   .mcard {
     font: inherit; aspect-ratio: 3 / 4; padding: 6px; cursor: pointer; border-radius: 18px;
-    border: 2px solid var(--ink); background: var(--teal); color: #fff;
+    border: 2px solid var(--ink); background: linear-gradient(135deg, #F06292 0%, #4FB3E8 100%); color: #fff;
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; box-shadow: 0 5px 0 var(--ink);
   }
   .mcard .q { font-size: 2rem; opacity: .85; }
@@ -243,6 +243,32 @@
   .info { background: #FBF8F1; border: 2px dashed var(--line); border-radius: 18px; padding: 16px 20px; margin-top: 18px; line-height: 2; font-size: 1.1rem; font-weight: 700; }
   .info h3 { margin: 0 0 6px; font-size: 1.3rem; font-weight: 900; color: var(--teal); }
 
+  .topart { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; flex-wrap: wrap; }
+  .flag { width: 78px; height: 52px; border-radius: 8px; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,.25); }
+  .covers { display: flex; gap: 10px; }
+  .cover { width: 64px; height: 64px; border-radius: 50%; border: 3px solid #fff; font-size: 2rem; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,.2); }
+  .cover.boy { background: #B3E5FC; }
+  .cover.girl { background: #F8BBD0; }
+  .dsearch { width: 100%; max-width: 520px; display: block; margin: 0 auto 14px; font: inherit; font-size: 1.15rem; padding: 12px 16px; border-radius: 16px; border: 2px solid var(--teal); }
+  .dlist { display: grid; gap: 12px; }
+  .dcard { background: #fff; border: 2px solid var(--line); border-radius: 18px; padding: 14px; }
+  .dhead { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
+  .dem { font-size: 2.4rem; }
+  .dar { font-size: 1.5rem; font-weight: 900; }
+  .dexp { color: var(--muted); font-weight: 700; }
+  .drow { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+  .dw { background: #FBF8FF; border-radius: 12px; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+  .dw small { color: var(--muted); font-weight: 700; }
+  .dw b { font-size: 1.1rem; }
+  .dp { color: var(--teal); font-size: .9rem; font-weight: 700; }
+  .spk.sm { width: 34px; height: 34px; font-size: .95rem; margin: 4px 0 0; }
+
+  .portal { background: #fff; border: 2px solid var(--line); border-radius: 22px; padding: 18px; line-height: 1.9; }
+  .portal h3 { margin: 0 0 4px; font-size: 1.3rem; font-weight: 900; color: var(--teal); }
+  .portal .ql { margin: 10px 0 4px; font-weight: 900; }
+  .portal nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 6px 0; }
+  .portal a { color: var(--terra); font-weight: 800; text-decoration: none; }
+  .portal a:hover { text-decoration: underline; }
   footer { margin-top: 22px; text-align: center; color: var(--muted); font-weight: 700; }
 
   @media (max-width: 560px) {
@@ -263,6 +289,13 @@
 
   <header class="hero">
     <div class="ribbon">🎁 A Gift</div>
+    <div class="topart">
+      <svg class="flag" viewBox="0 0 3 2" role="img" aria-label="Algerian flag"><rect width="1.5" height="2" fill="#006233"/><rect x="1.5" width="1.5" height="2" fill="#FFFFFF"/><circle cx="1.35" cy="1" r="0.5" fill="#D21034"/><circle cx="1.5" cy="1" r="0.4" fill="#FFFFFF"/><polygon fill="#D21034" points="1.75,0.8 1.797,0.935 1.94,0.938 1.826,1.025 1.868,1.162 1.75,1.08 1.632,1.162 1.674,1.025 1.56,0.938 1.703,0.935"/></svg>
+      <div class="covers">
+        <button class="cover boy" data-kid="boy" aria-label="ولد">👦</button>
+        <button class="cover girl" data-kid="girl" aria-label="بنت">👧</button>
+      </div>
+    </div>
     <h1>استوديو التعلم الممتع</h1>
     <p class="dedication">A gift from my best friend</p>
     <div class="welcome">
@@ -286,7 +319,19 @@
   <div class="langs" id="langs"></div>
   <section class="panel" id="panel" aria-live="polite"></section>
 
-  <footer>Made with love for our family 💛</footer>
+  <footer class="portal">
+    <h3>البوابة التعليمية لعائلة خاوة رفيق</h3>
+    <p>للخدمات الرقمية</p>
+    <p>منصة شخصية لأولاده تساعده على تعلم اللغات والنجاح في مستوياته والتعلم في مجالات التكنولوجيا</p>
+    <p class="ql">روابط سريعة</p>
+    <nav>
+      <a href="https://imadtbn.github.io/dz_portal/index.html" target="_blank" rel="noopener">الصفحة الرئيسية</a>
+      <a href="https://imadtbn.github.io/dz_portal/pages/privacy.html" target="_blank" rel="noopener">سياسة الخصوصية</a>
+      <a href="https://imadtbn.github.io/dz_portal/pages/terms.html" target="_blank" rel="noopener">شروط الاستخدام</a>
+    </nav>
+    <p>معلومات الاتصال: خنشلة، الجزائر</p>
+    <p>© 2026- جميع الحقوق محفوظة</p>
+  </footer>
 </div>
 
 <script src="./db.js"></script>
@@ -339,17 +384,15 @@
       numsP: ["آينس","تسفاي","درآي","فير","فونف","زيكس","زيبن","آخت","نيون","تسيهن"],
       sent: [["Der Hund ist klein","الكلب صغير"],["Ich habe einen Apfel","عندي تفاحة"],["Die Sonne ist warm","الشمس دافئة"]] },
 
-    { name: "Türkçe", dir: "ltr", code: "tr",
+    { name: "中文", dir: "ltr", code: "zh",
       words: [
-        ["kedi","كيدي","قطة","🐱"], ["köpek","كوبيك","كلب","🐶"], ["elma","إلما","تفاحة","🍎"],
-        ["güneş","غونيش","شمس","☀️"], ["su","سو","ماء","💧"], ["ev","إيف","بيت","🏠"],
-        ["çiçek","تشيتشيك","زهرة","🌸"], ["kelebek","كِلِبِك","فراشة","🦋"],
-        ["top","توب","كرة","⚽"], ["fil","فيل","فيل","🐘"]
+        ["猫","ماو","قطة","🐱"], ["狗","قو","كلب","🐶"], ["苹果","بينغ قو","تفاحة","🍎"],
+        ["太阳","تاي يانغ","شمس","☀️"], ["水","شوي","ماء","💧"], ["房子","فانغ زي","بيت","🏠"],
+        ["花","هوا","زهرة","🌸"], ["蝴蝶","هو دييه","فراشة","🦋"], ["足球","زو تشيو","كرة القدم","⚽"], ["大象","دا شيانغ","فيل","🐘"]
       ],
-      nums: ["bir","iki","üç","dört","beş","altı","yedi","sekiz","dokuz","on"],
-      numsP: ["بير","إيكي","يوتش","دورت","بيش","ألتي","يدي","سكيز","دوكوز","أون"],
-      sent: [["Kedi çok tatlı","القطة لطيفة جدا"],["Ben bir elma yiyorum","أنا آكل تفاحة"],["Su çok soğuk","الماء بارد جدا"]] },
-
+      nums: ["一","二","三","四","五","六","七","八","九","十"],
+      numsP: ["يي","إر","سان","سي","وو","ليو","تشي","با","جيو","شي"],
+      sent: [["这 是 一 只 猫","هذا قط"],["我 喜欢 学习","أحب التعلم"],["太阳 很 热","الشمس حارة"]] },
     { name: "Русский", dir: "ltr", code: "ru",
       words: [
         ["кошка","كوشكا","قطة","🐱"], ["собака","سوباكا","كلب","🐶"], ["яблоко","ياблاكا","تفاحة","🍎"],
@@ -385,6 +428,14 @@
   ];
 
   // ============ GAMES (20 activities in 4 groups) ============
+  const PROFILES = [
+    { id: "kid",    emoji: "🧒", title: "طفل المرحلة الابتدائية", hint: "ألعاب الحروف والأرقام والرسم", games: ["match","spell","count","order","odd","listen","draw","pixel","stories","riddles","numlang"] },
+    { id: "teen",   emoji: "🧑", title: "طالب المتوسطة والثانوية", hint: "الحساب والمهن والقاموس", games: ["mathq","wordprob","times","dreams","jobs","cars","newcars","dict","riddles"] },
+    { id: "mom",    emoji: "👩", title: "ركن الأم", hint: "المطبخ الصحي ورياضة البيت", games: ["mom","dict","stories"] },
+    { id: "barber", emoji: "💈", title: "ركن الحلاقة", hint: "قصات الشعر وأحلام المهن", games: ["hair","dreams"] },
+    { id: "cars",   emoji: "🚗", title: "عشاق السيارات", hint: "أنواع السيارات وتقنياتها الحديثة", games: ["cars","newcars","classify"] },
+    { id: "reader", emoji: "📖", title: "قارئ القصص", hint: "القصص والألغاز والقيم", games: ["stories","endstory","riddles","manners"] }
+  ];
   const CATS = [
     { id: "words",  title: "الحروف والكلمات", cls: "c-words",  bar: "var(--teal)" },
     { id: "math",   title: "الأرقام والحساب", cls: "c-math",   bar: "var(--mustard)" },
@@ -413,6 +464,13 @@
     { id: "char",     cat: "create", emoji: "🧑‍🎨", title: "صمّم شخصيتك",         desc: "اختر الوجه والقبعة والملابس" },
     { id: "pray",     cat: "faith",  emoji: "🕌", title: "الصلاة",              desc: "الصلوات الخمس وخطواتها" },
     { id: "manners",  cat: "faith",  emoji: "🤝", title: "الآداب والقيم",       desc: "أسئلة عن حسن الخلق" },
+    { id: "dict",     cat: "words",  emoji: "📖", title: "القاموس الكبير",       desc: "معاني الكلمات بـ8 لغات مع شرح" },
+    { id: "cars",     cat: "words",  emoji: "🚗", title: "أنواع السيارات",      desc: "أيقونات السيارات بأسمائها" },
+    { id: "hair",     cat: "life",   emoji: "💈", title: "ركن الحلاقة",          desc: "قصات شعر للجزائر وأوروبا" },
+    { id: "newcars",  cat: "life",   emoji: "🏎️", title: "ركن السيارات الجديدة", desc: "تقنيات السيارات الحديثة" },
+    { id: "mom",      cat: "life",   emoji: "🥗", title: "ركن المطبخ والرياضة",  desc: "أفكار صحية ورياضة في البيت" },
+    { id: "stories",  cat: "words",  emoji: "📚", title: "القصص العربية",        desc: "قصص قصيرة فيها عبرة" },
+    { id: "riddles",  cat: "words",  emoji: "❓", title: "الألغاز",              desc: "ألغاز ممتعة تفكّر فيها" },
     { id: "dreams",   cat: "life",   emoji: "🌟", title: "أحلام المستقبل",      desc: "ماذا تريد أن تصبح؟" },
     { id: "jobs",     cat: "life",   emoji: "🧰", title: "المهن وأدواتها",      desc: "أي أداة تحتاجها كل مهنة؟" },
     { id: "family",   cat: "life",   emoji: "👨‍👩‍👧", title: "أفراد العائلة",        desc: "تعلّم أسماء العائلة بلغتك" }
@@ -519,7 +577,7 @@
   const ACTS = ["وجد كنزاً مخفياً","صنع صديقاً جديداً","رسم خريطة للمغامرة","حلّ لغزاً صعباً","طار عالياً فوق المدينة","اخترع شيئاً عجيباً"];
   const PALETTE = ["#1F3B40","#E07A5F","#F2C14E","#2A7F7A","#8FC7D6","#A8C5A0","#9B5DE5","#FFFFFF"];
   const BADGES = [[0,"🌱 High Level | مستوى عالٍ"],[10,"🥉 Adventurer | مغامر"],[25,"🥈 Little Star | نجم صغير"],[40,"🌟 Star Explorer | مستكشف النجوم"],[60,"🎓 Scholar | عالم صغير"],[80,"🥇 Learning Champion | بطل التعلم"],[110,"💎 Diamond | الماسة"],[150,"🚀 Space Hero | بطل الفضاء"],[200,"👑 Royal Master | سيد المعرفة"],[300,"🏆 Legend | أسطورة الاستوديو"]];
-  const VOICE = { en: "en-US", fr: "fr-FR", es: "es-ES", de: "de-DE", tr: "tr-TR", ru: "ru-RU", ar: "ar-SA", it: "it-IT" };
+  const VOICE = { en: "en-US", fr: "fr-FR", es: "es-ES", de: "de-DE", zh: "zh-CN", ru: "ru-RU", ar: "ar-SA", it: "it-IT" };
 
   // ============ STATE ============
   let T = 6;
@@ -815,7 +873,7 @@
     return { q: `<p class="qtext ar">${item.q}</p>`, c };
   }
   const QUIZ_GENS = { listen: genListen, odd: genOdd, flash: genFlash, mathq: genMath, count: genCount,
-                      wordprob: genWord, times: genTimes, numlang: genNum, manners: genManners, jobs: genJob, family: genFamily };
+                      wordprob: genWord, times: genTimes, numlang: genNum, manners: genManners, jobs: genJob, family: genFamily, riddles: genRiddle };
 
   // Job and tool quiz
   function genJob() {
@@ -862,6 +920,94 @@
     return `<p class="hint">ماذا تريد أن تصبح عندما تكبر؟</p>${dream}<div class="cards">${grid}</div>${detail}`;
   }
 
+  // ============ DICTIONARY AND CARS ============
+  const DICT_KEYS = ["en","fr","es","de","zh","ru","ar","it"];
+  const DICT_LABEL = { en: "English", fr: "Français", es: "Español", de: "Deutsch", zh: "中文", ru: "Русский", ar: "العربية", it: "Italiano" };
+  function dictListHTML() {
+    const q = ((game && game.q) || "").trim().toLowerCase();
+    const items = DB.dictionary.map((e, i) => ({ e, i })).filter(({ e }) =>
+      !q || [...Object.values(e.names), e.ar, e.explain].some(x => String(x).toLowerCase().includes(q)));
+    if (!items.length) return `<p class="hint">لا توجد نتائج، جرّب كلمة أخرى</p>`;
+    return items.map(({ e, i }) => `
+      <div class="dcard">
+        <div class="dhead"><span class="dem">${e.emoji}</span>
+          <div><div class="dar">${e.ar}</div><div class="dexp">${e.explain}</div></div></div>
+        <div class="drow">${DICT_KEYS.map((k, j) => `
+          <div class="dw">
+            <small>${DICT_LABEL[k]}</small>
+            <b dir="${k === "ar" ? "rtl" : "ltr"}">${e.names[k]}</b>
+            ${e.pron && e.pron[k] ? `<span class="dp">${e.pron[k]}</span>` : ""}
+            <button class="spk sm" data-act="dspk" data-idx="${i * 10 + j}" aria-label="استمع">🔊</button>
+          </div>`).join("")}</div>
+      </div>`).join("");
+  }
+  function viewDict() {
+    return `<p class="hint">ابحث عن أي كلمة بأي لغة، واستمع إلى نطقها</p>
+      <input id="dictQ" class="dsearch" type="search" placeholder="اكتب كلمة..." value="${((game.q || "")).replace(/"/g, "&quot;")}">
+      <div id="dictList" class="dlist">${dictListHTML()}</div>`;
+  }
+  function viewCars() {
+    const code = L().code;
+    const cards = DB.cars.map((c, i) =>
+      `<button class="gcard c-words" data-act="carpick" data-idx="${i}"><span class="ge">${c.emoji}</span><b>${c.names[code]}</b><small>${c.ar}</small></button>`).join("");
+    let detail = "";
+    if (game.picked >= 0) {
+      const c = DB.cars[game.picked];
+      detail = `<div class="qbox"><div class="picture">${c.emoji}</div><div class="meaning">${c.names[code]}</div>
+        <p class="qtext">${c.explain}</p>
+        <div class="center"><button class="spk big" data-act="carsay" data-idx="${game.picked}" aria-label="استمع">🔊</button></div></div>`;
+    }
+    return `<p class="hint">اختر نوع السيارة لتعرف اسمها وتسمعه</p><div class="cards">${cards}</div>${detail}`;
+  }
+
+  // ============ NEW SPACES ============
+  function viewProfile() {
+    const p = PROFILES.find(x => x.id === game.profile);
+    const cards = p.games.map(id => GAMES.find(g => g.id === id)).filter(Boolean).map(g =>
+      `<button class="gcard c-words" data-game="${g.id}"><span class="ge">${g.emoji}</span><b>${g.title}</b><small>${g.desc}</small></button>`).join("");
+    return `<div class="gamehead"><button class="back" data-act="home">${UI.home}</button><h2>${p.emoji} ${p.title}</h2></div>
+      <p class="hint">${p.hint}</p><div class="cards">${cards}</div>`;
+  }
+  function viewHair() {
+    const place = game.place;
+    const tab = (key, label) => `<button class="tab" data-act="hairplace" data-idx="${key === "dz" ? 0 : 1}" style="${place === key ? "background:var(--ink);color:#fff" : ""}">${label}</button>`;
+    const items = DB.hair.filter(h => h.place === place || h.place === "both").map(h =>
+      `<div class="cls-card"><div><b>${h.name}</b><div class="dexp">${h.desc}</div></div></div>`).join("");
+    return `<p class="hint">اختر المكان لترى القصات المناسبة</p>
+      <div class="sub">${tab("dz", "الجزائر")}${tab("eu", "أوروبا")}</div>
+      ${items}
+      <p class="hint">استشر الحلاق حول شكل وجهك ونوع شعرك قبل أي قصة جديدة ✂️</p>`;
+  }
+  function viewNewCars() {
+    const items = DB.newCars.map((c, i) =>
+      `<div class="cls-card"><div><span class="pic">${c.emoji}</span> <b>${c.name}</b><div class="dexp">${c.desc}</div></div>
+        <button class="spk" data-act="speakcar" data-idx="${i}" aria-label="استمع">🔊</button></div>`).join("");
+    return `<p class="hint">تعرّف على أحدث تقنيات السيارات بشرح بسيط</p>${items}`;
+  }
+  function viewMom() {
+    const tab = game.tab;
+    const tabBtn = (key, label) => `<button class="tab" data-tab="${key}" style="${tab === key ? "background:var(--ink);color:#fff" : ""}">${label}</button>`;
+    const list = tab === "kitchen" ? DB.kitchen : DB.workouts;
+    const items = list.map((x, i) =>
+      `<div class="cls-card"><div><span class="pic">${x.emoji}</span> <b>${x.name}</b><div class="dexp">${x.desc}</div>${x.time ? `<div class="dp">المدة: ${x.time}</div>` : ""}</div>
+        <button class="spk" data-act="speakmom" data-idx="${i}" aria-label="استمع">🔊</button></div>`).join("");
+    return `<p class="hint">أفكار عامة للمطبخ والرياضة، ولا تغني عن استشارة الطبيب</p>
+      <div class="sub">${tabBtn("kitchen", "المطبخ الصحي")}${tabBtn("workout", "الرياضة في البيت")}</div>
+      ${items}`;
+  }
+  function viewStories() {
+    const items = DB.stories_ar.map((st, i) =>
+      `<div class="cls-card" style="flex-direction:column;align-items:stretch">
+        <div class="lsec" style="margin:0"><b>${st.title}</b> <button class="spk" data-act="speakstory" data-idx="${i}" aria-label="استمع">🔊</button></div>
+        <p class="qtext" style="text-align:right;line-height:2">${st.text}</p>
+        <p class="dp">العبرة: ${st.moral}</p></div>`).join("");
+    return `<p class="hint">قصص عربية قصيرة فيها عبرة</p>${items}`;
+  }
+  function genRiddle() {
+    const r = pickOne(DB.riddles);
+    return { q: `<p class="qtext">${r.q}</p>`, c: mkChoices(r.a, r.w) };
+  }
+
   // ============ OTHER GAMES ============
   function newClassify() {
     const pool = shuffle([...ANIMAL_IDX, ...NATURE_IDX]).slice(0, 6);
@@ -892,6 +1038,12 @@
       case "order": return newOrder();
       case "classify": return newClassify();
       case "dreams": game = { type: "dreams", picked: -1, dream: -1 }; return;
+      case "dict": game = { type: "dict", q: "" }; return;
+      case "cars": game = { type: "cars", picked: -1 }; return;
+      case "hair": game = { type: "hair", place: "dz" }; return;
+      case "newcars": game = { type: "newcars" }; return;
+      case "mom": game = { type: "mom", tab: "kitchen" }; return;
+      case "stories": game = { type: "stories" }; return;
       case "pixel": game = { type: "pixel", grid: Array(64).fill(""), color: PALETTE[1] }; return;
       case "char": game = { type: "char", sel: [0, 0, 0, 0] }; return;
       case "endstory": return newEnd();
@@ -960,7 +1112,10 @@
       return `<section class="cat"><h2><span class="bar-c" style="background:${c.bar}"></span>${c.title}</h2>
               <div class="cards">${cards}</div></section>`;
     }).join("");
-    return `<p class="intro">اختر لعبة وابدأ المغامرة! 🎉</p>${sections}`;
+    const profiles = PROFILES.map(p =>
+      `<button class="gcard c-create" data-profile="${p.id}"><span class="ge">${p.emoji}</span><b>${p.title}</b><small>${p.hint}</small></button>`).join("");
+    return `<section class="cat"><h2><span class="bar-c" style="background:var(--terra)"></span>اختر ملفك الشخصي</h2><div class="cards">${profiles}</div></section>
+      <p class="intro">أو اختر لعبة وابدأ المغامرة! 🎉</p>${sections}`;
   }
 
   function viewMatch() {
@@ -1184,6 +1339,12 @@
       case "story": body = viewStory(); break;
       case "pray": body = viewPray(); break;
       case "dreams": body = viewDreams(); break;
+      case "dict": body = viewDict(); break;
+      case "cars": body = viewCars(); break;
+      case "hair": body = viewHair(); break;
+      case "newcars": body = viewNewCars(); break;
+      case "mom": body = viewMom(); break;
+      case "stories": body = viewStories(); break;
       default: body = viewQuizGame();
     }
     return `
@@ -1210,7 +1371,7 @@
   }
   function render() {
     chrome();
-    $("panel").innerHTML = view === "home" ? viewHome() : viewGame();
+    $("panel").innerHTML = view === "home" ? viewHome() : view === "profile" ? viewProfile() : viewGame();
     if (view === "draw") initCanvas();
   }
 
@@ -1228,6 +1389,8 @@
     if (d.lang !== undefined) { T = Number(d.lang); if (view !== "home") initGame(view); render(); return; }
     if (d.level !== undefined) { level = d.level; if (view !== "home") initGame(view); render(); return; }
     if (d.kid !== undefined) { kid = d.kid; render(); return; }
+    if (d.profile !== undefined) { view = "profile"; game = { profile: d.profile }; render(); window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+    if (d.tab !== undefined) { game.tab = d.tab; render(); return; }
     if (d.game !== undefined) { openGame(d.game); return; }
     if (d.psub !== undefined) { pSub = d.psub; initGame("pray"); render(); return; }
     if (d.act === undefined) return;
@@ -1266,6 +1429,13 @@
       case "save": saveDrawing(); break;
       case "newdraw": newDrawWord(); $("drawPrompt").textContent = promptText(game.drawWord); break;
       case "roll": rollStory(); render(); break;
+      case "dspk": { const e = Math.floor(idx / 10), k = idx % 10; speak(DB.dictionary[e].names[DICT_KEYS[k]], DICT_KEYS[k]); break; }
+      case "carpick": game.picked = idx; speak(DB.cars[idx].names[L().code], L().code); render(); break;
+      case "carsay": speak(DB.cars[idx].names[L().code], L().code); break;
+      case "hairplace": game.place = idx === 0 ? "dz" : "eu"; render(); break;
+      case "speakcar": speakAr(DB.newCars[idx].name + ". " + DB.newCars[idx].desc); break;
+      case "speakmom": { const list = game.tab === "kitchen" ? DB.kitchen : DB.workouts; speakAr(list[idx].name + ". " + list[idx].desc); break; }
+      case "speakstory": speakAr(DB.stories_ar[idx].title + ". " + DB.stories_ar[idx].text); break;
       case "dpick": game.picked = idx; speak(DB.professions[idx].names[L().code], L().code); render(); break;
       case "speakjob": speak(DB.professions[idx].names[L().code], L().code); break;
       case "dream": game.dream = idx; addScore(2); speakAr(DB.professions[idx].names.ar); render(); break;
@@ -1273,6 +1443,12 @@
   });
 
   $("kidName").addEventListener("input", e => { kidName = e.target.value; });
+  document.addEventListener("input", e => {
+    if (e.target.id === "dictQ" && game && game.type === "dict") {
+      game.q = e.target.value;
+      $("dictList").innerHTML = dictListHTML();
+    }
+  });
 
   // ============ MERGE THE EXTRA DATABASE (db.js) ============
   if (typeof DB !== "undefined") {
@@ -1284,6 +1460,9 @@
     MANNERS.push(...(DB.manners || []));
     QUIZ.push(...(DB.prayerQuiz || []));
   }
+
+  DB.professions.forEach((p, i) => { p.names.zh = DB.zhProfessions[i]; });
+  DB.family.forEach((f, i) => { f.names.zh = DB.zhFamily[i]; });
 
   buildStatic();
   render();
