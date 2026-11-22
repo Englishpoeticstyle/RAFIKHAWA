@@ -11,7 +11,7 @@
 <meta name="apple-mobile-web-app-title" content="Learning Studio">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@500;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --paper: #FFFFFF;
@@ -288,67 +288,6 @@
   @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; animation: none !important; }
   }
-
-  /* ===== Premium theme ===== */
-  :root { --gold: #B8912F; --gold-l: #E8D49A; --ink: #15130F; --paper: #FAF8F3; --line: #E8E2D2; --muted: #6B6558; }
-  body {
-    color: var(--ink); -webkit-font-smoothing: antialiased;
-    background:
-      radial-gradient(900px 500px at 0% -10%, #F3EAD2 0%, transparent 60%),
-      radial-gradient(800px 500px at 110% 10%, #E7ECF3 0%, transparent 55%),
-      var(--paper);
-  }
-  .hero {
-    background: linear-gradient(150deg, #0D0C0A 0%, #1E1B16 55%, #3B2F18 100%);
-    border-radius: 36px; padding: 40px 34px 30px;
-    border: 1px solid rgba(232,212,154,.35);
-    box-shadow: 0 34px 60px -34px rgba(20,14,4,.6);
-  }
-  .hero::before {
-    content: ""; position: absolute; inset: 12px; pointer-events: none;
-    border: 1px solid rgba(232,212,154,.22); border-radius: 26px;
-  }
-  .hero h1, .wtitle, .honor, .portal h3, .cat h2 { font-family: 'Playfair Display', 'Cairo', serif; }
-  .hero h1 { color: #F6EBCB; letter-spacing: .3px; font-size: clamp(2rem, 5vw, 3rem); }
-  .honor { color: var(--gold-l); font-weight: 600; font-style: italic; }
-  .welcome {
-    background: linear-gradient(135deg, rgba(232,212,154,.16), rgba(255,255,255,.04));
-    border: 1px solid rgba(232,212,154,.5); border-radius: 22px;
-  }
-  .wsub { color: #EDE3C6; }
-  .ribbon { background: linear-gradient(90deg, #E8D49A, #B8912F); color: #15130F; }
-  .pill { border-color: rgba(232,212,154,.6); transition: background .2s ease, color .2s ease; }
-  .pill:hover { background: rgba(232,212,154,.18); }
-  .pill[aria-pressed="true"] {
-    background: linear-gradient(135deg, #E8D49A, #B8912F); color: #15130F; border-color: transparent;
-  }
-  .name-input { background: #FFFDF7; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
-  .gcard {
-    background: #fff; border: 1px solid var(--line); border-radius: 22px;
-    box-shadow: 0 12px 26px -20px rgba(0,0,0,.35);
-    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-  }
-  .gcard:hover {
-    transform: translateY(-4px); border-color: var(--gold-l);
-    box-shadow: 0 24px 40px -22px rgba(0,0,0,.4);
-  }
-  .cat h2 { font-size: clamp(1.3rem, 3vw, 1.6rem); font-weight: 700; }
-  .btn { background: linear-gradient(135deg, #15130F, #3B2F18); color: #F6EBCB; border-radius: 999px; }
-  .lang-btn {
-    border-radius: 999px; border: 1px solid var(--line); background: #fff;
-    padding: 8px 14px; font-weight: 700; cursor: pointer; transition: border-color .2s ease, background .2s ease;
-  }
-  .lang-btn:hover { border-color: var(--gold); }
-  .lang-btn[aria-pressed="true"] { background: #15130F; color: #E8D49A; border-color: #15130F; }
-  .portal {
-    border-top: 1px solid var(--line); margin-top: 36px; padding-top: 24px;
-    text-align: center; color: var(--muted);
-  }
-  .panel { animation: rise .5s ease both; }
-  @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { animation: none !important; transition: none !important; }
-  }
 </style>
 </head>
 <body>
@@ -363,12 +302,12 @@
         <button class="cover girl" data-kid="girl" aria-label="بنت">👧</button>
       </div>
     </div>
-    <h1 id="siteTitle">أهلاً بعائلة خاوة رفيق وأطفالها</h1>
+    <h1>استوديو التعلم الممتع</h1>
     <div class="welcome">
-      <p class="wtitle" id="wTitle">مرحباً بكم في استوديو عائلة خاوة رفيق للتعلم</p>
-      <p class="wsub" id="wSub">متعة، تعليم، وأحلام كبيرة لأطفالنا وعائلتنا</p>
+      <p class="wtitle">Welcome to Family Learning Studio</p>
+      <p class="wsub">مرحباً بكم في استوديو العائلة للتعلم: متعة، تعليم، وأحلام كبيرة</p>
     </div>
-    <p class="honor" id="honor">لأطفالنا وعائلتنا، بكل احترام ومحبة وأمنيات طيبة</p>
+    <p class="honor">For our children and family, with respect, love and warm wishes</p>
     <div class="setup">
       <div class="group" id="levels"></div>
       <div class="group" id="kids"></div>
@@ -386,14 +325,13 @@
   <section class="panel" id="panel" aria-live="polite"></section>
 
   <footer class="portal">
-    <h3 id="fTitle">البوابة التعليمية لعائلة خاوة رفيق</h3>
-    <p id="fText">منصة شخصية لأولاد رفيق تساعدهم على تعلم اللغات والنجاح في مستوياتهم والتعلم في مجالات التكنولوجيا</p>
+    <h3>البوابة التعليمية لعائلة خاوة رفيق</h3>
+    <p>منصة شخصية لأولاد رفيق تساعدهم على تعلم اللغات والنجاح في مستوياتهم والتعلم في مجالات التكنولوجيا</p>
     <p>© 2026- جميع الحقوق محفوظة</p>
   </footer>
 </div>
 
 <script src="./db.js"></script>
-<script src="./i18n.js"></script>
 <script>
   // ============ TARGET LANGUAGES ============
   // words: [word, pronunciation in Arabic letters, meaning, emoji]
@@ -643,36 +581,6 @@
 
   // ============ STATE ============
   let T = 6;
-  // Interface language follows the language button that is pressed.
-  let UI_CODE = "ar";
-  const tr = (k, fb) => {
-    const d = I18N[UI_CODE] || {};
-    if (d[k] !== undefined) return d[k];
-    return fb !== undefined ? fb : (I18N.en[k] ?? k);
-  };
-  const gt = id => { const t = (I18N[UI_CODE] || {}).g?.[id]; return t ? t[0] : GAMES.find(g => g.id === id).title; };
-  const gd = id => { const t = (I18N[UI_CODE] || {}).g?.[id]; return t ? t[1] : GAMES.find(g => g.id === id).desc; };
-  const levelList = () => levelList().map(([k, label]) => [k, tr("lvl_" + k, label)]);
-  const kidList = () => kidList().map(([k, label]) => [k, tr("kid_" + k, label)]);
-  // Scroll to the game area (not the top of the page), so the game opens where the child is looking.
-  function scrollToPanel() {
-    const el = document.getElementById("panel");
-    const y = el.getBoundingClientRect().top + window.scrollY - 16;
-    window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
-  }
-  function applyStatic() {
-    const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
-    document.documentElement.lang = UI_CODE;
-    document.documentElement.dir = LANGS[T].dir;
-    set("siteTitle", tr("h1", "أهلاً بعائلة خاوة رفيق وأطفالها"));
-    set("wTitle", tr("welcomeTitle", "مرحباً بكم في استوديو عائلة خاوة رفيق للتعلم"));
-    set("wSub", tr("welcomeSub", "متعة، تعليم، وأحلام كبيرة لأطفالنا وعائلتنا"));
-    set("honor", tr("honor", "لأطفالنا وعائلتنا، بكل احترام ومحبة وأمنيات طيبة"));
-    set("fTitle", tr("footerTitle", "البوابة التعليمية لعائلة خاوة رفيق"));
-    set("fText", tr("footerText", "منصة شخصية لأولاد رفيق تساعدهم على تعلم اللغات والنجاح في مستوياتهم والتعلم في مجالات التكنولوجيا"));
-    const name = document.getElementById("kidName");
-    if (name) name.placeholder = tr("namePh", "اسم الطفل (اختياري)");
-  }
   let level = "primary";
   let kid = "boy";
   let kidName = "";
@@ -1056,8 +964,8 @@
   function viewProfile() {
     const p = PROFILES.find(x => x.id === game.profile);
     const cards = p.games.map(id => GAMES.find(g => g.id === id)).filter(Boolean).map(g =>
-      `<button class="gcard c-words" data-game="${g.id}"><span class="ge">${g.emoji}</span><b>${gt(g.id)}</b><small>${gd(g.id)}</small></button>`).join("");
-    return `<div class="gamehead"><button class="back" data-act="home">${tr("home", UI.home)}</button><h2>${p.emoji} ${tr("pt_" + p.id, p.title)}</h2></div>
+      `<button class="gcard c-words" data-game="${g.id}"><span class="ge">${g.emoji}</span><b>${g.title}</b><small>${g.desc}</small></button>`).join("");
+    return `<div class="gamehead"><button class="back" data-act="home">${UI.home}</button><h2>${p.emoji} ${p.title}</h2></div>
       <p class="hint">${p.hint}</p><div class="cards">${cards}</div>`;
   }
   function viewHair() {
@@ -1278,8 +1186,8 @@
         return;
     }
   }
-  function openGame(id) { view = id; initGame(id); render(); scrollToPanel(); }
-  function goHome() { view = "home"; game = null; render(); scrollToPanel(); }
+  function openGame(id) { view = id; initGame(id); render(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+  function goHome() { view = "home"; game = null; render(); window.scrollTo({ top: 0, behavior: "smooth" }); }
 
   // ============ CANVAS (drawing) ============
   function initCanvas() {
@@ -1330,15 +1238,15 @@
     const sections = CATS.map(c => {
       const cards = GAMES.filter(g => g.cat === c.id).map(g =>
         `<button class="gcard ${c.cls}" data-game="${g.id}">
-           <span class="ge">${g.emoji}</span><b>${gt(g.id)}</b><small>${gd(g.id)}</small>
+           <span class="ge">${g.emoji}</span><b>${g.title}</b><small>${g.desc}</small>
          </button>`).join("");
-      return `<section class="cat"><h2><span class="bar-c" style="background:${c.bar}"></span>${tr("cat_" + c.id, c.title)}</h2>
+      return `<section class="cat"><h2><span class="bar-c" style="background:${c.bar}"></span>${c.title}</h2>
               <div class="cards">${cards}</div></section>`;
     }).join("");
     const profiles = PROFILES.map(p =>
-      `<button class="gcard c-create" data-profile="${p.id}"><span class="ge">${p.emoji}</span><b>${tr("pt_" + p.id, p.title)}</b><small>${tr("ph_" + p.id, p.hint)}</small></button>`).join("");
-    return `<section class="cat"><h2><span class="bar-c" style="background:var(--terra)"></span>${tr("profilesTitle", "اختر ملفك الشخصي")}</h2><div class="cards">${profiles}</div></section>
-      <p class="intro">${tr("intro", "أو اختر لعبة وابدأ المغامرة! 🎉")}</p>${sections}`;
+      `<button class="gcard c-create" data-profile="${p.id}"><span class="ge">${p.emoji}</span><b>${p.title}</b><small>${p.hint}</small></button>`).join("");
+    return `<section class="cat"><h2><span class="bar-c" style="background:var(--terra)"></span>اختر ملفك الشخصي</h2><div class="cards">${profiles}</div></section>
+      <p class="intro">أو اختر لعبة وابدأ المغامرة! 🎉</p>${sections}`;
   }
 
   function viewMatch() {
@@ -1360,7 +1268,7 @@
       <div class="sound-note">${UI.soundNote}</div>
       <div class="bar"><span class="stat">${UI.moves}: ${g.moves}</span></div>
       <div class="mgrid" dir="${L().dir}">${cards}</div>
-      ${done ? `<p class="msg ok">${tr("done", UI.done)}</p><div class="center"><button class="btn" data-act="again">${tr("again", UI.again)}</button></div>` : ""}`;
+      ${done ? `<p class="msg ok">${UI.done}</p><div class="center"><button class="btn" data-act="again">${UI.again}</button></div>` : ""}`;
   }
 
   function viewBuild() {
@@ -1418,7 +1326,7 @@
       const star = pct >= 80 ? "🏆" : pct >= 50 ? "🌟" : "💪";
       return `<div class="finish"><div class="big">${star}</div>
         <h2>${g.correct} / ${g.total}</h2><p class="intro">${praise()}</p>
-        <div class="center"><button class="btn" data-act="again">${tr("again", UI.again)}</button></div></div>`;
+        <div class="center"><button class="btn" data-act="again">${UI.again}</button></div></div>`;
     }
     const cur = g.cur;
     const bar = `<div class="bar"><span class="stat">السؤال ${g.round} / ${g.total}</span><span class="stat">⭐ ${g.correct}</span></div>`;
@@ -1457,7 +1365,7 @@
     }).join("");
     return `<p class="hint">${UI.classifyHint}</p>
       <div class="bar"><span class="stat">⭐ ${score}</span></div>${rows}
-      ${allDone ? `<p class="msg ok">${tr("allDone", UI.allDone)}</p><div class="center"><button class="btn" data-act="again">${tr("again", UI.again)}</button></div>` : ""}`;
+      ${allDone ? `<p class="msg ok">${UI.allDone}</p><div class="center"><button class="btn" data-act="again">${UI.again}</button></div>` : ""}`;
   }
 
   function viewPixel() {
@@ -1574,11 +1482,11 @@
     }
     return `
       <div class="gamehead">
-        <button class="back" data-act="home">${tr("home", UI.home)}</button>
-        <h2>${info.emoji} ${gt(info.id)}</h2>
+        <button class="back" data-act="home">${UI.home}</button>
+        <h2>${info.emoji} ${info.title}</h2>
       </div>
       ${body}
-      <div class="gamefoot"><button class="btn ghost" data-game="${next.id}">${tr("nextGame", "اللعبة التالية: {g} ➜").replace("{g}", gt(next.id))}</button></div>`;
+      <div class="gamefoot"><button class="btn ghost" data-game="${next.id}">${UI.nextGame.replace("اللعبة التالية", "اللعبة التالية: " + next.title)}</button></div>`;
   }
 
   // ============ RENDER ============
@@ -1590,7 +1498,7 @@
     $("badge").textContent = badgeOf(score);
     const cur = BADGES.filter(b => score >= b[0]).length - 1;
     const nxt = BADGES[cur + 1];
-    $("next").textContent = nxt ? `⬆️ ${nxt[1]} ${tr("at", "عند")} ${nxt[0]} ⭐` : "🏆 وصلت لأعلى مستوى!";
+    $("next").textContent = nxt ? `⬆️ ${nxt[1]} عند ${nxt[0]} ⭐` : "🏆 وصلت لأعلى مستوى!";
     $("ladder").innerHTML = BADGES.map((b, i) =>
       `<span class="rung${i === cur ? " on" : i < cur ? " done" : ""}">${b[1]} · ${b[0]}⭐</span>`).join("");
   }
@@ -1601,8 +1509,8 @@
   }
 
   function buildStatic() {
-    $("levels").innerHTML = levelList().map(([k, label]) => `<button class="pill" data-level="${k}">${label}</button>`).join("");
-    $("kids").innerHTML = kidList().map(([k, label]) => `<button class="pill" data-kid="${k}">${label}</button>`).join("");
+    $("levels").innerHTML = UI.levels.map(([k, label]) => `<button class="pill" data-level="${k}">${label}</button>`).join("");
+    $("kids").innerHTML = UI.kids.map(([k, label]) => `<button class="pill" data-kid="${k}">${label}</button>`).join("");
     $("langs").innerHTML = LANGS.map((l, i) => `<button class="lang-btn" data-lang="${i}">${l.name}</button>`).join("");
   }
 
@@ -1611,10 +1519,10 @@
     const t = e.target.closest("button");
     if (!t || t.disabled) return;
     const d = t.dataset;
-    if (d.lang !== undefined) { T = Number(d.lang); UI_CODE = LANGS[T].code; buildStatic(); applyStatic(); if (view !== "home") initGame(view); render(); return; }
+    if (d.lang !== undefined) { T = Number(d.lang); if (view !== "home") initGame(view); render(); return; }
     if (d.level !== undefined) { level = d.level; if (view !== "home") initGame(view); render(); return; }
     if (d.kid !== undefined) { kid = d.kid; render(); return; }
-    if (d.profile !== undefined) { view = "profile"; game = { profile: d.profile }; render(); scrollToPanel(); return; }
+    if (d.profile !== undefined) { view = "profile"; game = { profile: d.profile }; render(); window.scrollTo({ top: 0, behavior: "smooth" }); return; }
     if (d.tab !== undefined) { game.tab = d.tab; render(); return; }
     if (d.game !== undefined) { openGame(d.game); return; }
     if (d.psub !== undefined) { pSub = d.psub; initGame("pray"); render(); return; }
@@ -1692,11 +1600,7 @@
   DB.family.forEach((f, i) => { f.names.zh = DB.zhFamily[i]; });
 
   buildStatic();
-  applyStatic();
   render();
-</script>
-<script>
-  if ("serviceWorker" in navigator) { navigator.serviceWorker.register("./sw.js"); }
 </script>
 </body>
 </html>
